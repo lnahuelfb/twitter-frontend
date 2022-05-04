@@ -52,3 +52,70 @@
   font-weight: 700;
   overflow-wrap: break-word;
 }
+
+.welcome-login-button-google{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  color: #3c4043;
+  cursor: pointer;
+  text-align: center;
+}
+
+.welcome-login-button-google img {
+  width: 25px;
+}
+
+.welcome-login-button-google span {
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.welcome-login-button-apple{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  color: #3c4043;
+  cursor: pointer;
+  text-align: center;
+}
+
+.welcome-login-button-apple img {
+  width: 25px;
+}
+
+.welcome-login-button-apple span {
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
