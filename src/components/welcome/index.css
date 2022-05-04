@@ -5,10 +5,11 @@
 }
 
 .welcome-image {
+  width: 45%;
+  height: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
   background-image: url('/src/images/background-twitter.png');
 }
 
@@ -27,7 +28,7 @@
 .welcome-login-data {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .welcome-login-data img {
@@ -41,7 +42,7 @@
   letter-spacing: -1.2px;
   line-height: 84px;
   overflow-wrap: break-word;
-  margin: 64px 0;
+  margin: 20px 0;
   max-width: 522px;
 }
 
@@ -118,4 +119,86 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.welcome-login-separation {
+  width: 300px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-login-separation span {
+  color:#0f1419;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.line {
+  background-color: #eff3f4;
+  height: 1px;
+  width: 140px
+}
+
+.welcome-login-button-register {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03A9F4;
+  border: 1px solid #03A9F4;
+  border-radius: 20px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.welcome-login-terms-and-conditions {
+  width: 300px;
+  height: 40px;
+  line-height: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  color: #536471;
+}
+
+.welcome-login-have-account {
+  color: #0f1419;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+.welcome-login-button-login {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  color: #03A9F4;
+  cursor: pointer;
+  text-align: center;
 }

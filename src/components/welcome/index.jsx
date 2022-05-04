@@ -31,6 +31,26 @@ export const Welcome = () => {
             <span>Registrarse con Apple</span>
           </div>
 
+          <div className="welcome-login-separation">
+            <div className="line"></div>
+  
+            <span>o</span>
+            <div className="line"></div>
+          </div>
+
+          <div className="welcome-login-button-register">
+            <span>Registrarse con email</span>
+          </div>
+          <div className="welcome-login-terms-and-conditions">
+            <span>Al registrarte, aceptas los Términos de servicio y la Política de privacidad, incluida la política de Uso de Cookies.</span>
+          </div>
+
+          <div className="welcome-login-have-account">
+            <span>¿Ya tienes cuenta?</span>
+          </div>
+            <div className="welcome-login-button-login">
+              <span>Iniciar sesión</span>
+            </div>
         </div>
       </div>
       <div className="welcome-image">
