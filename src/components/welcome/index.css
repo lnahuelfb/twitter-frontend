@@ -1,0 +1,54 @@
+.welcome-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row-reverse;
+}
+
+.welcome-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  background-image: url('/src/images/background-twitter.png');
+}
+
+.welcome-image img{
+  width: 60%;
+}
+
+.welcome-login {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 760px;
+}
+
+.welcome-login-data {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.welcome-login-data img {
+  width: 48px;
+}
+
+.welcome-login-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -1.2px;
+  line-height: 84px;
+  overflow-wrap: break-word;
+  margin: 64px 0;
+  max-width: 522px;
+}
+
+.welcome-login-subtitle {
+  margin-bottom: 32px;
+  line-height: 36px;
+  font-size: 31px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+}
