@@ -18,7 +18,7 @@ export const Welcome = () => {
           </div>
 
           <div className="welcome-login-subtitle">
-            <span>Únete a Twitter hoy mismo.</span>
+            <span>Únete a TwitDev hoy mismo.</span>
           </div>
 
           <div className="welcome-login-button-google">

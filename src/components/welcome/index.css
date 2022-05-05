@@ -87,6 +87,12 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.welcome-login-button-google:hover{
+  background-color: #f2faf9;
+  border: 1px solid #6dacff;
+}
+
 .welcome-login-button-apple{
   width: 300px;
   display: flex;
@@ -119,6 +125,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.welcome-login-button-apple:hover {
+  background-color: #bdbcbc;
 }
 
 .welcome-login-separation {
@@ -163,6 +173,10 @@
   text-align: center;
 }
 
+.welcome-login-button-register:hover{
+  background-color: #006e7c;
+}
+
 .welcome-login-terms-and-conditions {
   width: 300px;
   height: 40px;
@@ -201,4 +215,8 @@
   color: #03A9F4;
   cursor: pointer;
   text-align: center;
+}
+
+.welcome-login-button-login:hover{
+  background-color: #b4e4de;
 }
