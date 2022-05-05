@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, { useContext } from 'react'
+import { DataContext } from './context/DataContext';
 import { Welcome } from './components/welcome';
 import './App.css';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false)
+
+  const {isLogin} = useContext(DataContext)
 
   return (
     <div className="App">
