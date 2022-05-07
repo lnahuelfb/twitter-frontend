@@ -11,9 +11,11 @@ export const SingUp = () => {
       <div className="signup-container">
         <div className="signup-header">
           <div className="signup-header-item-1">
-            <button>
-              x
-            </button>
+            <Link to='/'>
+              <button>
+                x
+              </button>
+            </Link>
           </div>
           <div className="signup-header-item-2">
             <img src={twitter} alt='twitter logo' />

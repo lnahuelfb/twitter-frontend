@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import twitterWhite from '../../images/twitter-white.svg'
 import twitter from '../../images/twitter.svg'
 import google from '../../images/google.svg'
@@ -40,7 +41,9 @@ export const Welcome = () => {
             </div>
 
             <div className="welcome-login-button-register">
-              <span>Registrarse con email</span>
+              <Link to='/signup'>
+                <span>Registrarse con email</span>
+              </Link>
             </div>
             <div className="welcome-login-terms-and-conditions">
               <span>Al registrarte, aceptas los Términos de servicio y la Política de privacidad, incluida la política de Uso de Cookies.</span>
@@ -50,7 +53,9 @@ export const Welcome = () => {
               <span>¿Ya tienes cuenta?</span>
             </div>
               <div className="welcome-login-button-login">
+              <Link to='/login' className='button-register-link'>
                 <span>Iniciar sesión</span>
+              </Link>
               </div>
           </div>
         </div>
