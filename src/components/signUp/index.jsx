@@ -6,21 +6,6 @@ import { Link } from 'react-router-dom'
 
 export const SignUp = () => {
   return (
-  // <div className='signup'>
-  //   <div className='signup-container'>
-  //     <div className='signup-header'>
-  //       <div className='signup-header-item-1'>
-  //         <Link to='/'>
-  //           <button>
-  //             x
-  //           </button>
-  //         </Link>
-  //       </div>
-  //       <div className='signup-header-item-2'>
-  //         <img src={twitter} alt='twitter logo' />
-  //       </div>
-  //       <div className='signup-header-item-3' />
-  //     </div>
     <div className='signup-data'>
       <div className='welcome-login-subtitle'>
         <span>Únete a TwitDev hoy mismo.</span>
@@ -55,6 +40,5 @@ export const SignUp = () => {
         <span>¿Ya tienes una cuenta? <Link to='/i/login'>Inicia sesión</Link></span>
       </div>
     </div>
-
   )
 }

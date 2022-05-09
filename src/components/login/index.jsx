@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import google from '../../images/google.svg'
 import apple from '../../images/apple.svg'
 import './index.css'
-import { Link } from 'react-router-dom'
 
 export const Login = () => {
   return (
@@ -23,7 +23,6 @@ export const Login = () => {
 
       <div className='welcome-login-separation'>
         <div className='line' />
-
         <span>o</span>
         <div className='line' />
       </div>
