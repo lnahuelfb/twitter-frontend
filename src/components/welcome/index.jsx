@@ -40,11 +40,11 @@ export const Welcome = () => {
               <div className='line' />
             </div>
 
-            <div className='welcome-login-button-register'>
-              <Link to='/signup'>
+            <Link to='/i/signup'>
+              <div className='welcome-login-button-register'>
                 <span>Registrarse con email</span>
-              </Link>
-            </div>
+              </div>
+            </Link>
             <div className='welcome-login-terms-and-conditions'>
               <span>Al registrarte, aceptas los Términos de servicio y la Política de privacidad, incluida la política de Uso de Cookies.</span>
             </div>
@@ -52,11 +52,11 @@ export const Welcome = () => {
             <div className='welcome-login-have-account'>
               <span>¿Ya tienes cuenta?</span>
             </div>
-            <div className='welcome-login-button-login'>
-              <Link to='/login' className='button-register-link'>
+            <Link to='/i/login' className='button-register-link'>
+              <div className='welcome-login-button-login'>
                 <span>Iniciar sesión</span>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className='welcome-image'>
