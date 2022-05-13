@@ -88,7 +88,7 @@ export const Login = () => {
                           </div>
                           )
                     }
-                    <Link to='password'>
+                    <Link to='/i/password'>
                       <span>¿Olvidaste tu contraseña?</span>
                     </Link>
                   </div>
@@ -138,7 +138,7 @@ export const Login = () => {
               >Siguiente
               </button>
 
-              <Link to='password'>
+              <Link to='/i/password'>
                 <button className='login-password-button'>
                   ¿Olvidaste tu contraseña?
                 </button>

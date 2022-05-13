@@ -7,6 +7,7 @@ import { SignUp } from './components/signUp'
 import { Home } from './components/home'
 import { Form } from './components/form'
 import { LoginCard } from './components/login-card'
+import { Password } from './components/password'
 import './App.css'
 
 function App () {
@@ -18,6 +19,7 @@ function App () {
           <Route path='login' element={<Login />} />
           <Route path='signup' element={<SignUp />} />
           <Route path='signup/form' element={<Form />} />
+          <Route path='password' element={<Password />} />
         </Route>
         <Route path='/home' element={<Home />} />
         <Route path='*' element={<NotFound />} />
