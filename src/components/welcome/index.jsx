@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { DataContext } from '../../context/DataContext'
 import twitterWhite from '../../images/twitter-white.svg'
 import twitter from '../../images/twitter.svg'
 import google from '../../images/google.svg'
@@ -7,6 +8,13 @@ import apple from '../../images/apple.svg'
 import './index.css'
 
 export const Welcome = () => {
+  const { isLogin } = useContext(DataContext)
+  const navigate = useNavigate()
+
+  if (isLogin) {
+    navigate('/home')
+  }
+
   return (
     <>
       <div className='welcome-container'>
