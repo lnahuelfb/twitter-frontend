@@ -35,7 +35,6 @@ export const Welcome = () => {
 
             <div className='welcome-login-separation'>
               <div className='line' />
-
               <span>o</span>
               <div className='line' />
             </div>
