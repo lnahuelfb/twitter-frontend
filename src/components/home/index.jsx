@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 import { DataContext } from 'context/DataContext'
 
+import './index.css'
+
 export const Home = () => {
   const { isLogin, user, isLoading } = useContext(DataContext)
   const { logout } = useAuth0()
-
-  console.log(user)
 
   return (
     <>

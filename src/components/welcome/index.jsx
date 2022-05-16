@@ -3,8 +3,10 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 import { useNavigate } from 'react-router-dom'
 import { DataContext } from 'context/DataContext'
+
 import twitterWhite from 'images/twitter-white.svg'
 import twitter from 'images/twitter.svg'
+
 import './index.css'
 
 export const Welcome = () => {
