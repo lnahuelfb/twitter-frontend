@@ -1,75 +1,61 @@
 import React, { useContext } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { DataContext } from '../../context/DataContext'
-import twitterWhite from '../../images/twitter-white.svg'
-import twitter from '../../images/twitter.svg'
-import google from '../../images/google.svg'
-import apple from '../../images/apple.svg'
+import { useAuth0 } from '@auth0/auth0-react'
+
+import { useNavigate } from 'react-router-dom'
+import { DataContext } from 'context/DataContext'
+import twitterWhite from 'images/twitter-white.svg'
+import twitter from 'images/twitter.svg'
 import './index.css'
 
 export const Welcome = () => {
   const { isLogin } = useContext(DataContext)
   const navigate = useNavigate()
 
+  const { loginWithRedirect } = useAuth0()
+
   if (isLogin) {
     navigate('/home')
   }
 
   return (
-    <>
-      <div className='welcome-container'>
-        <div className='welcome-login'>
-          <div className='welcome-login-data'>
+    <div className='welcome-container'>
+      <div className='welcome-login'>
+        <div className='welcome-login-data'>
 
-            <img src={twitter} alt='logo twitter' />
+          <img src={twitter} alt='logo twitter' />
 
-            <div className='welcome-login-title'>
-              <span>Lo que está pasando ahora</span>
-            </div>
-
-            <div className='welcome-login-subtitle'>
-              <span>Únete a TwitDev hoy mismo.</span>
-            </div>
-
-            <div className='welcome-login-button-google'>
-              <img src={google} alt='google logo' />
-              <span>Registrarse con Google</span>
-            </div>
-
-            <div className='welcome-login-button-apple'>
-              <img src={apple} alt='apple logo' />
-              <span>Registrarse con Apple</span>
-            </div>
-
-            <div className='welcome-login-separation'>
-              <div className='line' />
-              <span>o</span>
-              <div className='line' />
-            </div>
-
-            <Link to='/i/signup'>
-              <div className='welcome-login-button-register'>
-                <span>Registrarse con email</span>
-              </div>
-            </Link>
-            <div className='welcome-login-terms-and-conditions'>
-              <span>Al registrarte, aceptas los Términos de servicio y la Política de privacidad, incluida la política de Uso de Cookies.</span>
-            </div>
-
-            <div className='welcome-login-have-account'>
-              <span>¿Ya tienes cuenta?</span>
-            </div>
-            <Link to='/i/login' className='button-register-link'>
-              <div className='welcome-login-button-login'>
-                <span>Iniciar sesión</span>
-              </div>
-            </Link>
+          <div className='welcome-login-title'>
+            <span>Lo que está pasando ahora</span>
           </div>
-        </div>
-        <div className='welcome-image'>
-          <img src={twitterWhite} alt='logo twitter' />
+
+          <div className='welcome-login-subtitle'>
+            <span>Únete a TwitDev hoy mismo.</span>
+          </div>
+
+          <div className='welcome-login-have-account'>
+            <span>¿Ya tienes cuenta?</span>
+          </div>
+
+          <button
+            className='welcome-login-button-login'
+            onClick={() => loginWithRedirect()}
+          >
+            <span>Iniciar sesión o crear cuenta</span>
+          </button>
+
+          <div className='welcome-login-terms-and-conditions'>
+            <span>
+              Pagina desarrollada por Nahuel Fernandez Beschtedt. No tiene fines comerciales. <br />
+              Cree esta pagina con el fin de demostrar mis conociemientos en el desarrollo de aplicaciones web. <br />
+              Si desea ver mi porfolio por favor haga click <a className='welcome-login-anchor' href='https://porfolio-nahuelfb.vercel.app'>aquí.</a>
+            </span>
+          </div>
+
         </div>
       </div>
-    </>
+      <div className='welcome-image'>
+        <img src={twitterWhite} alt='logo twitter' />
+      </div>
+    </div>
   )
 }

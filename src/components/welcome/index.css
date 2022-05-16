@@ -54,129 +54,6 @@
   overflow-wrap: break-word;
 }
 
-.welcome-login-button-google{
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #dadce0;
-  border-radius: 20px;
-  height: 40px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
-  letter-spacing: 0.25px;
-  white-space: nowrap;
-  color: #3c4043;
-  cursor: pointer;
-  text-align: center;
-}
-
-.welcome-login-button-google img {
-  width: 25px;
-}
-
-.welcome-login-button-google span {
-  font-size: 14px;
-  padding: 10px;
-  font-weight: 400;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.welcome-login-button-google:hover{
-  background-color: #f2faf9;
-  border: 1px solid #6dacff;
-}
-
-.welcome-login-button-apple{
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #dadce0;
-  border-radius: 20px;
-  height: 40px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
-  letter-spacing: 0.25px;
-  white-space: nowrap;
-  color: #3c4043;
-  cursor: pointer;
-  text-align: center;
-}
-
-.welcome-login-button-apple img {
-  width: 25px;
-}
-
-.welcome-login-button-apple span {
-  font-size: 14px;
-  padding: 10px;
-  font-weight: 400;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.welcome-login-button-apple:hover {
-  background-color: #bdbcbc;
-}
-
-.welcome-login-separation {
-  width: 300px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome-login-separation span {
-  color:#0f1419;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.line {
-  background-color: #eff3f4;
-  height: 1px;
-  width: 140px
-}
-
-.welcome-login-button-register {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #03A9F4;
-  border: 1px solid #03A9F4;
-  border-radius: 20px;
-  height: 40px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
-  letter-spacing: 0.25px;
-  white-space: nowrap;
-  color: #fff;
-  cursor: pointer;
-  text-align: center;
-}
-
-.welcome-login-button-register:hover{
-  background-color: #006e7c;
-}
-
 .welcome-login-terms-and-conditions {
   width: 300px;
   height: 40px;
@@ -221,12 +98,7 @@
   background-color: #b4e4de;
 }
 
-.welcome-login-button-register a {
-  text-decoration: none;
-  color: white;
-}
-
-.welcome-login-button-login a {
+.welcome-login-anchor {
   text-decoration: none;
   color: #03A9F4;
 }
@@ -261,28 +133,13 @@
   .welcome-image img {
     width: 40%;
   }
-
-  .welcome-login-button-apple {
-    width: auto;
-  }
-
-  .welcome-login-button-google {
-    width: auto;
-  }
-
-  .welcome-login-button-register {
-    width: auto;
-  }
   
   .welcome-login-button-login {
     width: auto;
   }
 
-  .welcome-login-separation {
-    width: auto;
-  }
-
   .welcome-login-terms-and-conditions {
     width: auto;
+    margin-bottom: 60px;
   }
 }
