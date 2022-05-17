@@ -13,7 +13,9 @@ export const DataProvider = ({ children }) => {
   const {
     user,
     isAuthenticated,
-    isLoading
+    isLoading,
+    logout,
+    login
   } = useAuth0()
 
   useEffect(() => {
@@ -25,7 +27,9 @@ export const DataProvider = ({ children }) => {
       isLogin,
       setIsLogin,
       user,
-      isLoading
+      isLoading,
+      logout,
+      login
     }}
     >
       {children}

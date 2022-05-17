@@ -1,9 +1,29 @@
 .navbar {
   display: flex;
-  width: 33%;
+  width: 30%;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 30px;
+  border-right: 0.5px solid grey;
+}
+
+.navbar nav {
+  margin: 12px 0;
+}
+
+.navbar-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-image-container img {
+  width: 30px;
+  height: 30px;
+  margin-left: 24px;
 }
 
 .navbar-items {
@@ -11,13 +31,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
   padding: 0 12px;
   margin: 0;
 }
 
 .navbar-items a {
+  display: flex;
+  align-items: center;  
+  height: 100%;
   text-decoration: none;
   color: #fff;
   font-size: 18px;
@@ -26,11 +47,32 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;  
-  width: 100%;
-  height: 100%;
   transition: all 0.3s ease-in-out;
+}
+
+.navbar-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0 12px;
+  margin: 6px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+  backdrop-filter:contrast(60%);
+}
+
+.navbar-twittear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  min-width: 52px;
+  min-height: 52px;
+  background: #00ba7c;
+  border-radius: 50px;
 }
 
 .navbar-user-image {
@@ -42,15 +84,16 @@
 
 .navbar-user-data {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
   height: 75px;
-  padding: 0 12px;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .navbar-user-image-container {
-  height: 100%;
+  height: 70%;
   padding: 0 12px;
+}
+
+.navbar-user-name-container {
+  height: 100%;
 }
