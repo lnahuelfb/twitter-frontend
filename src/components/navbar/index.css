@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  width: 30%;
+  width: 28%;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -60,6 +60,12 @@
   transition: all 0.3s ease-in-out;
 }
 
+.navbar-item-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
 .navbar-item:hover {
   backdrop-filter:contrast(60%);
 }
@@ -95,5 +101,32 @@
 }
 
 .navbar-user-name-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-user-name {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  height: 50%;
+}
+
+.navbar-user-username {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  color: #8b98a5;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+  height: 50%;
 }

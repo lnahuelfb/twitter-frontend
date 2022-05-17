@@ -40,7 +40,9 @@ export const Welcome = () => {
 
           <button
             className='welcome-login-button-login'
-            onClick={() => loginWithRedirect()}
+            onClick={() => loginWithRedirect({
+              redirect_uri: `${window.location.origin}/home`
+            })}
           >
             <span>Iniciar sesión o crear cuenta</span>
           </button>

@@ -19,7 +19,7 @@ export const DataProvider = ({ children }) => {
   } = useAuth0()
 
   useEffect(() => {
-    isAuthenticated && setIsLogin(true)
+    isAuthenticated && setIsLogin(isAuthenticated)
   }, [isAuthenticated])
 
   return (
